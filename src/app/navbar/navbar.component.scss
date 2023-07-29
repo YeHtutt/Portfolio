@@ -1,0 +1,38 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #141D2F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 100px; /*padding: topbottom leftright*/
+
+    .navbar-logo {
+        span {
+            cursor: pointer;
+            font-size: 32px !important;
+            color: white;
+            font-weight: 800;
+        }
+    }
+
+    .navbar-menu {
+        .link {
+            margin-left: 40px;
+            color: #FFFFFF;
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 23px;
+
+            &:hover {
+                color: #70E61C;
+            }
+        }
+    }
+
+
+
+}

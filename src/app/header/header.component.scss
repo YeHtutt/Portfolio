@@ -1,0 +1,115 @@
+.header-container {
+    display: flex;
+    background-color: #141D2F;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    height: 700px;
+    width: 100vw;
+
+    .profile-img-container {
+        box-sizing: border-box;
+        width: 50%;
+        padding-right: 30px;
+
+        .my-profile-img {
+            position: absolute;
+            z-index: 1;
+            left: 47px;
+            top: 100px;
+            width: 646px;
+            height: 705px;
+            object-fit: cover;
+        }
+
+        .header-purple-shadow {
+            position: absolute;
+            top: 179px;
+            width: 407px;
+            height: 608px;
+            flex-shrink: 0;
+        }
+
+        .header-green-shadow {
+            position: absolute;
+            top: 216px;
+            left: 220px;
+            width: 560px;
+            height: 530px;
+            transform: rotate(390deg);
+            flex-shrink: 0;
+        }
+    }
+
+    .title-container {
+        box-sizing: border-box;
+        width: 50%;
+        margin-left: 30px;
+        position: absolute;
+        right: 100px;
+        top: 297px;
+        z-index: 99;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        color: white;
+
+        .title-content {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+
+            span {
+                display: flex;
+                transform: rotate(-90deg);
+                font-size: 64px;
+            }
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 80px;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 52px;
+            color: #9747FF;
+        }
+
+        .title-name-job {
+            margin-left: -8px;
+        }
+
+        .btn-container {
+            height: 1px;
+            margin-top: 25px;
+            position: relative;
+            z-index: 99;
+
+            button {
+                width: 165px;
+                height: 60px;
+                background: #70E61C;
+                border-radius: 15px;
+                color: white;
+                font-size: 23px;
+                font-weight: 400;
+                box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                cursor: pointer;
+                transition: 0.1s ease;
+
+                &:hover {
+                    width: 175px;
+                    height: 70px;
+                    background-color: #4B47FF;
+                }
+            }
+
+
+        }
+
+    }
+}

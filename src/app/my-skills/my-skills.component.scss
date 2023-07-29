@@ -1,0 +1,86 @@
+.my-skills-container {
+    margin-top: 278px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+
+    .skills {
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        height: 414px;
+        width: 721px;
+        gap: 54px;
+        margin-right: 48px;
+
+        img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+    }
+
+    .skills-row {
+        display: flex;
+        align-items: center;
+        gap: 123px;
+    }
+
+    .skill-name {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .skills-description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 471px;
+        margin-right: 42px;
+        gap: 34px;
+
+        h2 {
+            text-align: right;
+            font-size: 90px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        span {
+            text-align: right;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        button {
+            margin-right: 135px;
+            width: 165px;
+            height: 60px;
+            background: #70E61C;
+            border-radius: 15px;
+            color: white;
+            font-size: 23px;
+            font-weight: 400;
+            box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            transition: 0.1s ease;
+
+            &:hover {
+                width: 175px;
+                height: 70px;
+                background-color: #4B47FF;
+            }
+        }
+    }
+
+    .purple-line {
+        width: 100px;
+        height: 5px;
+        background-color: #4B47FF;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
