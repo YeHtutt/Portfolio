@@ -1,7 +1,7 @@
 .github-email-container {
     display: flex;
     justify-content: space-between;
-
+    margin-top: -300px;
 
 
 
@@ -20,6 +20,11 @@
             object-fit: cover;
             flex-shrink: 0;
             cursor: pointer;
+            transition: transform 0.5s ease;
+            
+            &:hover {
+                transform: scale(1.3); 
+            }
         }
     }
 }
@@ -46,6 +51,8 @@
     align-items: center; 
     gap: 60px;
     height: max-content;
+    z-index: 6;
+    margin-right: 100px;
 
     .scroll-down-text {
         font-size: 23px;
@@ -56,6 +63,11 @@
     img {
         width: 24px;
         height: 24px;
+    }
+
+   
+
+    .arrowAnimation {
         animation: upDown 2s ease-in-out infinite;
     }
 }
@@ -66,10 +78,11 @@
     100% {transform: translateY(10px);}
 }
 
-/*
+
 .curved-background {
     width: 100vw;
+    height: 600px;
     position: absolute;
-    top: 316px;
+    top: 550px;
     z-index: 2;
-}*/
+}

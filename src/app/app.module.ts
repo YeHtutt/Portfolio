@@ -11,6 +11,14 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioHeadComponent } from './portfolio-head/portfolio-head.component';
 import { JoinComponent } from './join/join.component';
 import { PolloLocoComponent } from './pollo-loco/pollo-loco.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { StartPageComponent } from './start-page/start-page.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -22,11 +30,19 @@ import { PolloLocoComponent } from './pollo-loco/pollo-loco.component';
     MySkillsComponent,
     PortfolioHeadComponent,
     JoinComponent,
-    PolloLocoComponent
+    PolloLocoComponent,
+    ContactComponent,
+    FooterComponent,
+    ImprintComponent,
+    StartPageComponent,
+    AppComponent, ContactComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+   HttpClientModule,
+   FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

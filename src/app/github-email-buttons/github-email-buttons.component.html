@@ -1,5 +1,5 @@
 <div class="github-email-container">
-    <!--<img class="curved-background" src="assets/img/bg-top-shape.png" alt="curved background black">-->
+    <img class="curved-background" src="assets/img/bg-top-shape.png" alt="curved background black">
 
     <div class="github-email-buttons">
         <div class="purple-line"></div>
@@ -16,8 +16,8 @@
     </div>
 
     <div class="scroll-down-alert">
-        <div class="scroll-down-text">Scroll down</div>
-        <img src="assets/img/down-arrow.png">
+        <div class="scroll-down-text" *ngIf="animationIsActive">Scroll down</div>
+        <img src="assets/img/down-arrow.png" id="down-arrow" *ngIf="animationIsActive" class="arrowAnimation">
     </div>
 
 </div>

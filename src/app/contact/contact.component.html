@@ -1,0 +1,42 @@
+<div class="contact-box">
+<div class="contact-container">
+    <div class="purple-line"></div>
+    <h1>Contact</h1>
+</div>
+
+<div class="contact-me-container">
+    <div class="contact-me">
+        <h2>Got a problem to solve?</h2>
+        <p>
+            Contact me through this form, I am interested in hearing
+            you, konwing your ideas and contributing to your projects
+            with my work.
+        </p>
+        <span>Need a Frontend developer? <b>Contact me!</b></span>
+    </div>
+
+    <form (submit)="sendEmail()" class="contact-form">
+        <div class="wrapper">
+            <input required type="text" name="name" placeholder="Your name"  #nameField required> 
+        </div>
+
+        <div class="wrapper">
+            <input type="text" name="email" placeholder="Your email" #emailField required> 
+        </div>
+
+        <div class="wrapper">
+            <textarea type="text" name="text" placeholder="Your message"  #messageField required> 
+             
+            </textarea>
+        </div>
+
+        <div class="send-container">
+            <button class="send-btn" type="submit">
+                <span> Send Message </span>
+            </button>
+        </div>
+    </form>
+
+</div>
+
+</div>

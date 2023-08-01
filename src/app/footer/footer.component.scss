@@ -1,0 +1,52 @@
+.footer-container {
+    margin-top: 20px;
+    height: 291px;
+    padding: 0 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 4px solid #70E61C;
+
+
+    .footer-left {
+        span {
+            cursor: pointer;
+            font-size: 32px !important;
+            color: white;
+            font-weight: 800;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .footer-middle {
+        span {
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+
+    .footer-right {
+        display: flex;
+        width: 174px;
+        height: 40px;
+        align-items: center;
+        gap: 42px;
+
+        img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            
+            &:hover {
+                transform: scale(1.3); 
+            }
+        }
+    }
+}

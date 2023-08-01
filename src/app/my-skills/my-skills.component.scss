@@ -1,8 +1,9 @@
 .my-skills-container {
-    margin-top: 278px;
+    padding-top: 200px;
     display: flex;
     justify-content: space-between;
     color: white;
+    height: 100vh;
 
 
     .skills {
@@ -18,6 +19,11 @@
             width: 60px;
             height: 60px;
             object-fit: cover;
+            cursor: pointer;
+
+            &:hover {
+                animation: bounce 1.5s ease-in-out;
+            }
         }
     }
 
@@ -82,5 +88,35 @@
         background-color: #4B47FF;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+   
+    15% {
+        transform: translateY(-30px);
+    }
+
+    30% {
+        transform: translateY(0px);
+    }
+
+    45% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
