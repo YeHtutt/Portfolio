@@ -1,8 +1,8 @@
 .about-me-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    /*padding-top: 100px;*/
+    padding-top: 250px;
     padding-left: 102px;
     height: 100vh;
 
@@ -33,6 +33,7 @@
         color: white;
         width: 50%;
         padding-right: 121px;
+        z-index: 5;
 
         h2 {
             font-size: 90px;
@@ -53,7 +54,8 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        
+        z-index: 5;
+
 
         .ellipse {
             width: 453px;
@@ -78,4 +80,24 @@
     }
 
 
+}
+
+
+@media(max-width: 1090px) {
+    .about-me-container {
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding-top: 50px !important;
+        padding-left: 50px !important;
+    }
+
+    .green-line {
+        display: none;
+    }
+
+    .about-me-left-content {
+        padding-right: 0px !important;
+        width: 80% !important;
+    }
 }

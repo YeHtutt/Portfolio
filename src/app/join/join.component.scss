@@ -13,7 +13,7 @@
         align-items: center;
         justify-content: center;
         padding: 25px;
-        
+
 
         img {
             width: 370px;
@@ -103,4 +103,32 @@
 
 
 
+}
+
+@media(max-width: 1090px) {
+    .join-container {
+        flex-direction: column !important;
+        margin-left: 0px !important;
+        margin-top: 25px !important;
+    }
+
+    .join-screens {
+        padding: 0px !important;
+    }
+
+    .join-description {
+        margin-right: unset !important;
+        box-sizing: border-box !important;
+        width: 70% !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .join-text {
+        align-items: center !important;
+
+        span {
+            text-align: center !important;
+        }
+    }
 }

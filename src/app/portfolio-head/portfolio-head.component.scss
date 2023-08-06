@@ -1,5 +1,5 @@
 .portfolio-head-container {
-    padding-top: 110px;
+    padding-top: 210px;
     color: white;
     display: flex;
     align-items: center;
@@ -36,5 +36,36 @@
         flex-shrink: 0;
         background-color: #4B47FF;
         margin-left: 36px;
+    }
+}
+
+@media(max-width: 1090px) { 
+    .portfolio-head-container {
+        flex-direction: column;
+        padding-top: 120px;
+    }
+
+    .purple-line-left {
+        display: none; 
+    }
+
+    .title-and-description {
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 50px;
+
+        h2 {
+            text-align: center !important;
+        }
+        p {
+            text-align: center !important;
+            font-size: large;
+        }
+    }
+
+    .purple-line-right {
+        margin-left: 0px !important;
+        box-sizing: border-box;
+        width: 70% !important;
     }
 }

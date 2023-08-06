@@ -1,12 +1,14 @@
 .footer-container {
     margin-top: 20px;
-    height: 291px;
+    height: 220px;
     padding: 0 100px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-top: 4px solid #70E61C;
+    z-index: 2;
+    background-color: #141D2F;
 
 
     .footer-left {

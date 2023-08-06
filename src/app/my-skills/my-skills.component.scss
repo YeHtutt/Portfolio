@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     color: white;
-    height: 100vh;
 
 
     .skills {
@@ -91,6 +90,17 @@
     }
 }
 
+.green-shadow2 {
+    position: absolute;
+    top: 2600px;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    z-index: -1;
+    width: 400px;
+    height: 900px;
+}
+
 @keyframes bounce {
     0% {
         transform: translateY(0px);
@@ -118,5 +128,38 @@
 
     100% {
         transform: translateY(0);
+    }
+}
+
+
+@media(max-width: 1090px) { 
+    .my-skills-container {
+        flex-direction: column-reverse !important;
+        align-items: center;
+
+    }
+
+    .skills-description {
+        align-items: center !important;
+        margin-right: 0px !important;
+        width: unset !important;
+    }
+
+    .purple-line {
+        display: none;
+    }
+
+    .btn-container {
+        box-sizing: border-box;
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 75px;
+
+        button {
+            margin-right: 0 !important;
+        }
     }
 }

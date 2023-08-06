@@ -2,30 +2,24 @@
     display: flex;
     background-color: #141D2F;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 100px;
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 25px;
 
     .profile-img-container {
-        box-sizing: border-box;
-        width: 50%;
-        padding-right: 30px;
+        position: relative;
 
         .my-profile-img {
-            position: absolute;
+            position: relative;
             z-index: 1;
-            left: 47px;
-            top: 100px;
-            width: 646px;
-            height: 705px;
+            left: 50px;
+            top: 50px;
+            height: 800px;
             object-fit: cover;
         }
 
         .header-purple-shadow {
             position: absolute;
-            top: 179px;
+            top: 300px;
             width: 407px;
             height: 608px;
             flex-shrink: 0;
@@ -33,9 +27,9 @@
 
         .header-green-shadow {
             position: absolute;
-            top: 216px;
-            left: 220px;
-            width: 560px;
+            top: 300px;
+            left: 250px;
+            width: 600px;
             height: 530px;
             transform: rotate(390deg);
             flex-shrink: 0;
@@ -43,46 +37,40 @@
     }
 
     .title-container {
-        box-sizing: border-box;
-        width: 50%;
-        margin-left: 30px;
-        position: absolute;
-        right: 100px;
-        top: 297px;
-        z-index: 99;
-
+        margin-left: 150px;
+        margin-bottom: 120px;
         display: flex;
         align-items: center;
         flex-direction: column;
-
+        position: relative;
+        z-index: 99;
         color: white;
 
         .title-content {
             display: flex;
             align-items: center;
-            gap: 28px;
 
             span {
                 display: flex;
                 transform: rotate(-90deg);
-                font-size: 64px;
+                font-size: 70px;
             }
+
+            h1 {
+                margin: 0;
+                font-size: 80px;
+            }
+
+            h2 {
+                margin: 0;
+                font-size: 54px;
+                font-weight: 400;
+                color: #9747FF;
+            }
+
         }
 
-        h1 {
-            margin: 0;
-            font-size: 80px;
-        }
 
-        h2 {
-            margin: 0;
-            font-size: 52px;
-            color: #9747FF;
-        }
-
-        .title-name-job {
-            margin-left: -8px;
-        }
 
         .btn-container {
             height: 1px;
@@ -112,5 +100,149 @@
 
         }
 
+    }
+}
+
+@media (max-width: 1910px) {
+    .title-container {
+        margin-left: 120px !important;
+    }
+}
+
+@media (max-width: 1865px) {
+    .title-container {
+        margin-left: 100px !important;
+    }
+}
+
+@media (max-width: 1695px) {
+    .title-container {
+        margin-left: 50px !important;
+    }
+}
+
+@media (max-width: 1590px) {
+    .title-content {
+        span {
+            font-size: 54px !important;
+        }
+
+        h1 {
+            font-size: 60px !important;
+        }
+
+        h2 {
+            font-size: 46px !important;
+        }
+    }
+}
+
+@media (max-width: 1455px) {
+    .my-profile-img {
+        height: 750px !important;
+        left: 25px !important;
+    }
+
+    .header-purple-shadow {
+        left: -25px !important;
+    }
+
+    .header-green-shadow {
+        left: 200px !important;
+    }
+
+    .title-container {
+        margin-left: 25px !important;
+    }
+}
+
+@media (max-width: 1370px) {
+    .title-content {
+        span {
+            font-size: 44px !important;
+        }
+
+        h1 {
+            font-size: 56px !important;
+        }
+
+        h2 {
+            font-size: 38px !important;
+        }
+    }
+}
+
+@media (max-width: 1260px) {
+    .my-profile-img {
+        height: 680px !important;
+        left: 20px !important;
+    }
+
+    .title-content {
+        span {
+            font-size: 40px !important;
+        }
+
+        h1 {
+            font-size: 50px !important;
+        }
+
+        h2 {
+            font-size: 36px !important;
+        }
+    }
+}
+
+@media(max-width: 1155px) {
+    .my-profile-img {
+        height: 650px !important;
+        left: 0px !important;
+    }
+
+    .title-container {
+        margin-left: 5px !important;
+    }
+}
+
+
+@media (max-width: 1125px) {
+    .title-content {
+        span {
+            font-size: 38px !important;
+        }
+
+        h1 {
+            font-size: 48px !important;
+        }
+
+        h2 {
+            font-size: 34px !important;
+        }
+    }
+}
+
+@media(max-width: 1090px) {
+    .header-container {
+        flex-direction: column !important;
+        align-items: center;
+        padding-top: 25px;
+    }
+
+    .title-container {
+        margin-top: 50px !important;
+    }
+
+
+    .header-purple-shadow {
+        top: 100px !important;
+        width: 500px  !important;
+        height: 600px !important;
+        left: -100px !important;
+    }
+
+    .header-green-shadow {
+        top: 100px !important;
+        width: 600px !important;
+        height: 530px !important;
     }
 }
