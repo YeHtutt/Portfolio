@@ -98,14 +98,42 @@
     }
 }
 
-@media (max-width: 1695px){ 
+@media (max-width: 1695px) {
     .curved-background {
         top: 400px;
     }
 }
 
-@media(max-width: 1090px) { 
-    .github-email-container { 
+@media(max-width: 1090px) {
+    .github-email-container {
         align-items: flex-start;
+    }
+
+    .scroll-down-alert {
+        margin-top: -90px;
+    }
+}
+
+@media(max-width: 830px) {
+    .scroll-down-alert {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+    .github-email-buttons span {
+        display: none;
+    }
+
+    .github-email-buttons img {
+        width: 40px !important;
+        height: 40px !important;
+        object-fit: cover !important;
+    }
+}
+
+@media (max-width: 580px) {
+    .curved-background {
+        top: 500px;
     }
 }

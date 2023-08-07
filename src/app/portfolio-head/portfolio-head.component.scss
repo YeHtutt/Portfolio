@@ -69,3 +69,9 @@
         width: 70% !important;
     }
 }
+
+@media (max-width: 580px) { 
+    .title-and-description h2 {
+        font-size: 65px !important;
+    }
+}

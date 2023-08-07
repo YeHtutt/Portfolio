@@ -101,3 +101,27 @@
         width: 80% !important;
     }
 }
+
+@media (max-width: 830px) {
+    .ellipse {
+        display: none;
+
+        img {
+            display: none;
+        }
+    }
+
+    .about-me-container {
+        justify-content: flex-end !important;
+        padding-top: 250px !important;
+    }
+
+}
+
+@media (max-width: 580px) { 
+    .about-me-container {
+        h2 {
+            font-size: 65px !important;
+        }
+    }
+}

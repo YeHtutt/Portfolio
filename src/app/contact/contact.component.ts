@@ -113,4 +113,11 @@ export class ContactComponent {
     this[`${htmlInputElement}`] = true;
   }
 
+  scrollToSection() {
+    const top = document.getElementById('header');
+    if(top) {
+      top.scrollIntoView({behavior: 'smooth'});
+    }
+  }
+
 }

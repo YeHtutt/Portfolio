@@ -1,4 +1,4 @@
-<div class="contact-box">
+<div class="contact-box" id="contact-box">
     <div class="contact-container">
         <div class="purple-line"></div>
         <h1>Contact</h1>
@@ -51,6 +51,17 @@
         </form>
 
     </div>
+    
+    <div class="scroll-up-button">
+        <img 
+        (click)="scrollToSection()"
+        src="assets/img/Go-up-button-white.png" alt="scroll up button" class="none-hovered">
+
+        <img 
+        (click)="scrollToSection()"
+        src="assets/img/Go-up-button-green.png" alt="scroll up button" class="hovered">
+    </div>
+
     <div class="purple-shadow4">
         <img src="assets/img/shadows/Purple-shadow-4.png" alt="">
     </div>

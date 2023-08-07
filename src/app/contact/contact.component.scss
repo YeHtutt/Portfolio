@@ -169,16 +169,54 @@
     }
 }
 
+.scroll-up-button {
+    background-color: #141D2F;
+    position: relative;
+    bottom: 150px;
+    right: 100px;
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: opacity 0.01s;
+        position: absolute;
+    }
+
+}
+
+.none-hovered {
+    opacity: 1;
+
+    &:hover {
+        opacity: 0;
+    }
+}
+
+.hovered {
+    opacity: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
 @keyframes fadeInAnimation {
     from {
         width: 100%;
         opacity: 0;
-        transform: translateY(25px); /*Y-position start 20px under the original position*/
+        transform: translateY(25px);
+        /*Y-position start 20px under the original position*/
     }
+
     to {
         width: 100%;
         opacity: 1;
-        transform: translateY(0); /*transform to normal position 0 to the center*/
+        transform: translateY(0);
+        /*transform to normal position 0 to the center*/
     }
 }
 
@@ -186,21 +224,22 @@
     display: none !important;
 }
 
-@media(max-width: 1566px) { 
+@media(max-width: 1566px) {
     .contact-box {
         height: 1020px;
     }
 }
 
-@media(max-width: 1090px) { 
+@media(max-width: 1090px) {
     .contact-box {
         height: max-content !important;
         padding-bottom: 100px !important;
+        padding-top: 120px !important;
     }
 
     .contact-container {
         flex-direction: column-reverse !important;
-        padding-top: 75px;
+        padding-top: 0px;
         padding-bottom: 25px !important;
         padding-left: 0px !important;
         padding-right: 0px !important;
@@ -208,6 +247,7 @@
         h1 {
             margin: 0 !important;
         }
+
         .purple-line {
             box-sizing: border-box !important;
             margin-right: 0 !important;
@@ -221,7 +261,7 @@
         padding-bottom: 0 !important;
 
         .contact-me {
-            width: 70vw!important;
+            width: 70vw !important;
             padding-bottom: 50px;
             text-align: center;
         }
@@ -239,4 +279,29 @@
         gap: 0px;
     }
 
+
+    .scroll-up-button {
+        bottom: 70px;
+    }
+}
+
+@media(max-width: 700px) {
+
+    .wrapper {
+        input {
+            width: 80vw !important;
+        }
+
+        textarea {
+            width: 80vw !important;
+        }
+    }
+
+
+}
+
+@media (max-width: 580px) {
+    .contact-container h1 {
+        font-size: 65px !important;
+    }
 }

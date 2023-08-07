@@ -109,7 +109,7 @@
     .join-container {
         flex-direction: column !important;
         margin-left: 0px !important;
-        margin-top: 25px !important;
+        margin-top: 0px !important;
     }
 
     .join-screens {
@@ -127,8 +127,26 @@
     .join-text {
         align-items: center !important;
 
+        h3 {
+            font-size: 44px !important;
+        }
+        p {
+            font-size: 18px !important;
+        }
         span {
             text-align: center !important;
         }
+    }
+}
+
+@media(max-width: 700px) {
+    .live-test-btn {
+        margin-right: 50px !important;
+    }
+}
+
+@media (max-width: 580px) { 
+    .live-test-btn {
+        margin-right: 10px !important;
     }
 }

@@ -163,3 +163,30 @@
         }
     }
 }
+
+@media (max-width: 830px) {
+    .my-skills-container {
+        margin-top: -260px !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .skills {
+        margin-left: 0px !important;
+    }
+
+    .skills-description span {
+        text-align: center !important;
+    }
+
+    .skills-row {
+        gap: 50px !important;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 580px) {
+    .skills-description h2 {
+        font-size: 65px !important;
+    }
+}
