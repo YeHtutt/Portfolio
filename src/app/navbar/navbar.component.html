@@ -1,26 +1,28 @@
 <nav class="navbar">
-    <div class="navbar-logo" routerLink="/">
-        <span>Y</span><span style="color: #9747FF;">e</span><span>H</span><span>tu</span><span
-            style="color: #70E61C;">t</span>
-    </div>
+    <div class="navbar-spaceBetween">
+        <div class="navbar-logo" routerLink="/">
+            <span>Y</span><span style="color: #9747FF;">e</span><span>H</span><span>tu</span><span
+                style="color: #70E61C;">t</span>
+        </div>
 
-    <div class="navbar-menu">
-        <a class="link" href="#AboutMe">About me</a>
-        <a class="link" href="#skills">Skills</a>
-        <a class="link" href="#portfolio">Portfolio</a>
-    </div>
+        <div class="navbar-menu">
+            <a class="link" href="#AboutMe">About me</a>
+            <a class="link" href="#skills">Skills</a>
+            <a class="link" href="#portfolio">Portfolio</a>
+        </div>
 
-    <div class="burger-menu">
-        <button (click)="toggleMenu()" class="burger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul *ngIf="menuOpen" class="menu-items">
-            <li><a class="link" href="#AboutMe" (click)="toggleMenu()">About me</a></li>
-            <li><a class="link" href="#skills" (click)="toggleMenu()">Skills</a></li>
-            <li> <a class="link" href="#portfolio" (click)="toggleMenu()">Portfolio</a></li>
-            <li> <a class="link" href="#contact-box" (click)="toggleMenu()">Contact</a></li>
-        </ul>
+        <div class="burger-menu">
+            <button (click)="toggleMenu()" class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul *ngIf="menuOpen" class="menu-items">
+                <li><a class="link" href="#AboutMe" (click)="toggleMenu()">About me</a></li>
+                <li><a class="link" href="#skills" (click)="toggleMenu()">Skills</a></li>
+                <li> <a class="link" href="#portfolio" (click)="toggleMenu()">Portfolio</a></li>
+                <li> <a class="link" href="#contact-box" (click)="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
     </div>
 </nav>

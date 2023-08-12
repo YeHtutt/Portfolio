@@ -119,9 +119,10 @@
     .join-description {
         margin-right: unset !important;
         box-sizing: border-box !important;
-        width: 70% !important;
+        width: 100% !important;
         justify-content: center !important;
         align-items: center !important;
+        padding: 0px 100px !important;
     }
 
     .join-text {
@@ -130,9 +131,11 @@
         h3 {
             font-size: 44px !important;
         }
+
         p {
             font-size: 18px !important;
         }
+
         span {
             text-align: center !important;
         }
@@ -140,13 +143,72 @@
 }
 
 @media(max-width: 700px) {
+    .join-description {
+        width: 90% !important;
+        padding: 0px 0px !important;
+    }
+
     .live-test-btn {
         margin-right: 50px !important;
     }
 }
 
-@media (max-width: 580px) { 
+@media (max-width: 580px) {
     .live-test-btn {
         margin-right: 10px !important;
+    }
+}
+
+@media (max-width: 490px) {
+    .live-test-btn {
+        width: 140px !important;
+        height: 55px !important;
+        font-size: 20px !important;
+    }
+
+    .github-btn {
+        width: 140px !important;
+        height: 55px !important;
+        font-size: 20px !important;
+    }
+
+    .join-description {
+        width: 90% !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .join-screens {
+        width: 100vw !important;
+        img {
+            width: 90vw !important;
+            height: 165px !important;
+        }
+    }
+
+    .join-description {
+        width: 90vw !important;
+    }
+
+    .live-test-btn {
+        width: 125px !important;
+        height: 50px !important;
+    }
+
+    .github-btn {
+        width: 125px !important;
+        height: 50px !important;
+    }
+}
+
+@media ( max-width: 300px) {
+    .live-test-btn {
+        width: 115px !important;
+        height: 50px !important;
+    }
+
+    .github-btn {
+        width: 115px !important;
+        height: 50px !important;
     }
 }

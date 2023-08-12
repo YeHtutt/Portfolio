@@ -48,7 +48,7 @@
     padding-bottom: 100px;
 
     .contact-me {
-        width: 473px;
+        width: 50%;
 
         h2 {
             font-size: 32px;
@@ -71,9 +71,13 @@
         flex-direction: column;
         align-items: center;
         gap: 35px;
+        width: 50%;
+
+        .wrapper {
+            width: 100%;
+        }
 
         input {
-            width: 617px;
             height: 50px;
             padding: 15px 25px;
             background-color: #141D2F;
@@ -83,7 +87,6 @@
         }
 
         textarea {
-            width: 617px;
             height: 202px;
             padding: 15px 25px;
             background-color: #141D2F;
@@ -103,7 +106,7 @@
         }
 
         .bg-warning {
-            background: url('/assets/img/alert.png') no-repeat scroll 15px 15px;
+            background: url('/src/assets/img/alert.png') no-repeat scroll 15px 15px;
             background-position: calc(100% - 15px) 15px;
         }
 
@@ -125,6 +128,7 @@
             color: white;
             background-color: #70E61C;
             border-radius: 10px;
+            cursor: pointer;
 
             &:hover {
                 width: 190px;
@@ -261,13 +265,28 @@
         padding-bottom: 0 !important;
 
         .contact-me {
-            width: 70vw !important;
+            width: 100% !important;
             padding-bottom: 50px;
             text-align: center;
         }
 
         .contact-form {
             gap: 0px !important;
+            width: 100% !important;
+
+            input {
+                width: unset;
+            }
+
+            textarea {
+                width: unset;
+            }
+
+            .wrapper {
+                gap: 0px;
+                box-sizing: border-box !important;
+                width: 100% !important;
+            }
         }
     }
 
@@ -275,29 +294,15 @@
         display: none;
     }
 
-    .wrapper {
-        gap: 0px;
-    }
-
 
     .scroll-up-button {
         bottom: 70px;
     }
-}
 
-@media(max-width: 700px) {
-
-    .wrapper {
-        input {
-            width: 80vw !important;
-        }
-
-        textarea {
-            width: 80vw !important;
-        }
+    .scroll-up-button {
+        bottom: -30px !important;
+        right: 40px !important;
     }
-
-
 }
 
 @media (max-width: 580px) {
@@ -305,3 +310,36 @@
         font-size: 65px !important;
     }
 }
+
+@media (max-width: 700px) {
+    .contact-me-container {
+        padding: unset;
+        width: 100vw !important;
+
+        .contact-me {
+            width: 90% !important;
+        }
+
+        .contact-form {
+            width: 90% !important;
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .scroll-up-button {
+
+        img {
+            height: 40px !important;
+            width: 40px !important;
+        }
+    }
+
+    .send-btn {
+        width: 180px !important;
+        height: 60px !important;
+    }
+
+}
+
+@media (max-width: 400px) {}

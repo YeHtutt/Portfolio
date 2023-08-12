@@ -115,6 +115,9 @@
 }
 
 @media(max-width: 830px) {
+    .curved-background { 
+        top: 490px;
+    }
     .scroll-down-alert {
         display: none;
     }
@@ -134,6 +137,23 @@
 
 @media (max-width: 580px) {
     .curved-background {
-        top: 500px;
+        top: 575px;
     }
 }
+
+@media (max-width: 400px) {
+    .curved-background { 
+        top: 560px;
+    }
+
+    .purple-line {
+        width: 25px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .curved-background { 
+        top: 520px;
+    }
+}
+
