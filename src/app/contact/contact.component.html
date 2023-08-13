@@ -44,7 +44,7 @@
                     <span *ngIf="!emailSent"> Send Message </span>
                 </button>
                 <div class="message-sent-container">
-                    <span class="message-sent" *ngIf="emailSent && showSpanMsg">
+                    <span *ngIf="emailSent && showSpanMsg" class="message-sent">
                         Your email has been sent successfully!</span>
                 </div>
             </div>

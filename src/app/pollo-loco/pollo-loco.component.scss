@@ -4,7 +4,7 @@
     align-items: center;
     margin-top: 116px;
     justify-content: flex-end;
-    margin-right: 50px;
+    max-width: 1440px !important;
 
     .pollo-loco-screens {
         width: 620px;
@@ -13,6 +13,8 @@
         align-items: center;
         justify-content: center;
         padding: 25px;
+        margin-right: 25px;
+        z-index: 2;
 
 
         img {
@@ -32,6 +34,7 @@
         align-items: flex-start;
         gap: 35px;
         margin-left: 100px;
+        z-index: 2;
 
 
         .pollo-loco-text {
@@ -100,18 +103,14 @@
             }
         }
     }
-
-
-
 }
 
 .green-shadow2 {
     position: absolute;
-    top: 3400px;
-    right: 0;
+    top: 2950px !important;
     height: 500px;
     flex-shrink: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
 @media(max-width: 1090px) { 
@@ -146,6 +145,11 @@
         span {
             text-align: center !important;
         }
+    }
+
+    .green-shadow2 { 
+        top: 3848px !important;
+        right: 0;
     }
 }
 

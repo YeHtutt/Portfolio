@@ -1,5 +1,6 @@
 .footer-container {
-    margin-top: 20px;
+    position: relative;
+    margin-top: 0px;
     height: 220px;
     padding: 0 100px;
     color: white;
@@ -7,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
     border-top: 4px solid #70E61C;
-    z-index: 2;
+    z-index: 2 !important;
     background-color: #141D2F;
 
 
@@ -45,6 +46,7 @@
             height: 30px;
             object-fit: cover;
             transition: transform 0.5s ease;
+            cursor: pointer;
 
             &:hover {
                 transform: scale(1.3);

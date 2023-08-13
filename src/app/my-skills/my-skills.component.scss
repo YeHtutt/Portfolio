@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     color: white;
+    max-width: 1440px !important;
 
 
     .skills {
@@ -13,6 +14,7 @@
         width: 721px;
         gap: 54px;
         margin-right: 48px;
+        z-index: 2;
 
         img {
             width: 60px;
@@ -46,6 +48,7 @@
         width: 471px;
         margin-right: 42px;
         gap: 34px;
+        z-index: 2;
 
         h2 {
             text-align: right;
@@ -92,11 +95,10 @@
 
 .green-shadow2 {
     position: absolute;
-    top: 2600px;
-    left: 0;
+    top: 1900px !important;
     display: flex;
     justify-content: flex-start;
-    z-index: -1;
+    z-index: 0;
     width: 400px;
     height: 900px;
 }
@@ -162,11 +164,21 @@
             margin-right: 0 !important;
         }
     }
+
+    .green-shadow2 { 
+        top: 2800px !important;
+        left: 0;
+    }
 }
 
 @media (max-width: 830px) {
     .my-skills-container {
         margin-top: -260px !important;
+    }
+
+    .green-shadow2 { 
+        top: 2400px !important;
+        left: 0;
     }
 }
 

@@ -28,6 +28,7 @@
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         margin-right: 36px;
+        z-index: 1;
     }
 
     .purple-line-right {
@@ -36,6 +37,7 @@
         flex-shrink: 0;
         background-color: #4B47FF;
         margin-left: 36px;
+        z-index: 1;
     }
 }
 
@@ -53,6 +55,7 @@
         box-sizing: border-box;
         width: 100%;
         margin-bottom: 50px;
+        z-index: 1;
 
         h2 {
             text-align: center !important;

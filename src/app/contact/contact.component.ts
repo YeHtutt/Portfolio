@@ -28,9 +28,9 @@ export class ContactComponent {
   addClassToButton = false;
 
   target!: HTMLInputElement;
-  
 
-  constructor(private http: HttpClient) {}
+
+  constructor(private http: HttpClient) { }
 
   async sendEmail() {
     this.emailSent = true;
@@ -38,9 +38,10 @@ export class ContactComponent {
       this.showSpanMsg = true;
       this.addClassToButton = true;
     }, 800);
-    let nameInput = this.nameField.nativeElement; /*mit Ref #nameField Element(InputFeld) wird zugegriffen */
+    let nameInput = this.nameField.nativeElement;
     let emailInput = this.emailField.nativeElement;
     let messageInput = this.messageField.nativeElement;
+
 
     let formData = new FormData();
     formData.append('name', nameInput.value);
@@ -48,13 +49,22 @@ export class ContactComponent {
     formData.append('message', messageInput.value);
 
     await fetch('https://ye-htut-aung.developerakademie.net/portfolio/assets/send_email.php', {
-      method:'POST',
+      method: 'POST',
       body: formData
     });
+
+    setTimeout(() => {
+      // Reset the form fields and flags after successful email submission
+      this.resetForm();
+      this.greenCheckMarkName = false;
+      this.greenCheckMarkEmail = false;
+      this.greenCheckMarkMessage = false;
+    }, 3000)
+
   }
 
   onBlur(event: Event) {
-    this.target = event.target as HTMLInputElement; 
+    this.target = event.target as HTMLInputElement;
     this.checkInputState();
   }
 
@@ -81,11 +91,11 @@ export class ContactComponent {
   }
 
   checkInputValue(inputType: string) {
-    this.target.value.length > 0 ?  this.showRequiredMessage(inputType) : this.hideRequiredMessage(inputType);
+    this.target.value.length > 0 ? this.showRequiredMessage(inputType) : this.hideRequiredMessage(inputType);
   }
 
   showRequiredMessage(inputType: string) {
-    let htmlInputElement = 'requiredAlert' + inputType.charAt(0).toUpperCase() +inputType.slice(1);
+    let htmlInputElement = 'requiredAlert' + inputType.charAt(0).toUpperCase() + inputType.slice(1);
     this[`${htmlInputElement}`] = false;
   }
 
@@ -99,11 +109,11 @@ export class ContactComponent {
     this[`${htmlInputElement}`] = this.target.value.length > 0;
   }
 
-  onFocus($event: Event, inputType: string) {
+  onFocus(event: Event, inputType: string) {
     this.target = event.target as HTMLInputElement;
 
-    if(this.target.value.length === 0) {
-      this.target.classList.add("bg-warning");
+    if (this.target.value.length === 0) {
+      this.target.classList.remove("bg-warning");
       this.showRequiredTextOnFocus(inputType);
     }
   }
@@ -115,9 +125,20 @@ export class ContactComponent {
 
   scrollToSection() {
     const top = document.getElementById('header');
-    if(top) {
-      top.scrollIntoView({behavior: 'smooth'});
+    if (top) {
+      top.scrollIntoView({ behavior: 'smooth' });
     }
+  }
+
+  // Reset the form fields and flags after successful email submission
+  resetForm() {
+    this.myForm.nativeElement.reset();
+    this.emailSent = false;
+    this.showSpanMsg = false;
+    this.addClassToButton = false;
+    this.nameField.nativeElement.classList.remove("content-filled");
+    this.emailField.nativeElement.classList.remove("content-filled");
+    this.messageField.nativeElement.classList.remove("content-filled");
   }
 
 }

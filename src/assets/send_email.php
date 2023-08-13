@@ -37,10 +37,11 @@ switch ($_SERVER['REQUEST_METHOD']) {
         header("Access-Control-Allow-Headers: content-type");
         exit;
     case ("POST"): //Send the email;
-        header("Access-Control-Allow-Origin: *");
 
         $subject = "Contact From " . $_POST['name'];
-        $headers = "From: noreply@developerakademie.com";
+        $headers = "From: ". $_POST['email'] . "\r\n";
+        $headers .= "Bcc: " . $_POST['email'] . "\r\n"; // Add sender's email as Bcc
+        $headers .= "Reply-To: " . $_POST['email'] . "\r\n"; // Set the reply-to address
 
         $message = "Name: " . $_POST['name'] . "\n";
         $message .= "Email: " . $_POST['email'] . "\n";

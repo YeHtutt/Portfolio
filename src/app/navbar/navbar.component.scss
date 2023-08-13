@@ -1,14 +1,16 @@
 .navbar {
     position: fixed;
     top: 0;
-    right: 0;
-    left: 0;
+    /*right: 0;
+    left: 0;*/
     z-index: 100;
     background-color: #141D2F;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 37px 100px; /*padding: topbottom leftright*/
+    box-sizing: border-box;
+    width: 1440px;
 
     .navbar-spaceBetween {
       box-sizing: border-box;
@@ -102,6 +104,12 @@
     }
   }
 
+  @media (max-width: 1439px) {
+    .navbar {
+      width: 100vw !important;
+    }
+  }
+
   @media(max-width: 700px) {
     .burger-menu {
         display: flex;
@@ -113,6 +121,7 @@
     }
 
     .navbar {
+      width: 100vw !important;
       padding: 37px 40px; /*padding: topbottom leftright*/
     }
   }

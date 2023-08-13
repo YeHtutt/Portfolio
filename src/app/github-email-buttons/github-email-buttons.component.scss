@@ -88,8 +88,9 @@
 .curved-background {
     width: 100vw;
     position: absolute;
-    top: 260px;
+    top: 390px;
     z-index: 2;
+    max-width: 1440px !important;
 }
 
 @media (max-width: 1865px) {

@@ -1,15 +1,15 @@
 .contact-box {
-    height: 100vh;
+    height: max-content;
 
     .purple-shadow4 {
         position: relative;
         left: 0;
-        bottom: 300px;
-        z-index: -1;
+        bottom: -20px !important;
+        z-index: 0;
 
         img {
             width: 600px;
-            height: 350px;
+            height: 200px;
             flex-shrink: 0;
         }
     }
@@ -45,7 +45,6 @@
     justify-content: space-between;
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 100px;
 
     .contact-me {
         width: 50%;
@@ -106,7 +105,7 @@
         }
 
         .bg-warning {
-            background: url('/src/assets/img/alert.png') no-repeat scroll 15px 15px;
+            background: url('/assets/img/alert.png') no-repeat scroll 15px 15px;
             background-position: calc(100% - 15px) 15px;
         }
 
@@ -164,7 +163,7 @@
     align-items: center;
 
     .message-sent {
-        font-size: 32px;
+        font-size: 22px;
         color: white;
         overflow: hidden;
         white-space: nowrap;
@@ -176,7 +175,7 @@
 .scroll-up-button {
     background-color: #141D2F;
     position: relative;
-    bottom: 150px;
+    bottom: 75px;
     right: 100px;
     display: flex;
     justify-content: flex-end;
@@ -228,11 +227,7 @@
     display: none !important;
 }
 
-@media(max-width: 1566px) {
-    .contact-box {
-        height: 1020px;
-    }
-}
+@media(max-width: 1566px) {}
 
 @media(max-width: 1090px) {
     .contact-box {
@@ -296,18 +291,19 @@
 
 
     .scroll-up-button {
-        bottom: 70px;
-    }
-
-    .scroll-up-button {
-        bottom: -30px !important;
-        right: 40px !important;
+        bottom: 70px !important;
     }
 }
 
 @media (max-width: 580px) {
     .contact-container h1 {
         font-size: 65px !important;
+    }
+
+    .message-sent-container {
+        .message-sent {
+            font-size: 12px;
+        }
     }
 }
 
@@ -324,6 +320,11 @@
             width: 90% !important;
         }
     }
+
+    .scroll-up-button {
+        bottom: 70px !important;
+        right: 5%;
+    }
 }
 
 @media (max-width: 490px) {
@@ -336,7 +337,7 @@
     }
 
     .send-btn {
-        width: 180px !important;
+        width: 150px !important;
         height: 60px !important;
     }
 
