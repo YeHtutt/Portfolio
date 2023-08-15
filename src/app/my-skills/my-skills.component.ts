@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-skills.component.scss']
 })
 export class MySkillsComponent {
-
+  scrollToSection() {
+    let contactSection = document.getElementById('contact-box');
+    if(contactSection) {
+      contactSection.scrollIntoView({behavior: 'smooth'});
+    }
+  }
 }

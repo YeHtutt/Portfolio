@@ -16,8 +16,8 @@
     </div>
 
     <div class="scroll-down-alert">
-        <div class="scroll-down-text">Scroll down</div> <!--*ngIf="animationIsActive"-->
-        <img src="assets/img/down-arrow.png" id="down-arrow" class="arrowAnimation"> <!--*ngIf="animationIsActive"-->
+        <div class="scroll-down-text" *ngIf="animationIsActive">Scroll down</div> 
+        <img src="assets/img/down-arrow.png" id="down-arrow" class="arrowAnimation" *ngIf="animationIsActive"> 
     </div>
 </div>
 

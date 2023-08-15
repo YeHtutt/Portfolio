@@ -1,8 +1,7 @@
 .github-email-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-
+    align-items: flex-start;
 
 
     .github-email-buttons {
@@ -51,8 +50,11 @@
     align-items: center;
     gap: 60px;
     height: max-content;
-    z-index: 6;
+    z-index: 2;
     padding-right: 50px;
+
+    position: relative;
+    top: -115px;
 
 
     .scroll-down-text {
@@ -89,19 +91,26 @@
     width: 100vw;
     position: absolute;
     top: 390px;
+    left: 0;
     z-index: 2;
-    max-width: 1440px !important;
 }
 
-@media (max-width: 1865px) {
+@media (max-width: 2000px) {
     .curved-background {
-        top: 330px;
+        top: 280px;
     }
 }
 
-@media (max-width: 1695px) {
+@media (max-width: 1440px) {
     .curved-background {
-        top: 400px;
+        top: 370px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .scroll-down-alert {
+        position: relative !important;
+        top: -185px !important;
     }
 }
 
@@ -111,14 +120,19 @@
     }
 
     .scroll-down-alert {
-        margin-top: -90px;
+        display: none;
+    }
+
+    .curved-background {
+        top: 425px !important;
     }
 }
 
 @media(max-width: 830px) {
-    .curved-background { 
-        top: 490px;
+    .curved-background {
+        top: 490px !important;
     }
+
     .scroll-down-alert {
         display: none;
     }
@@ -134,27 +148,36 @@
         height: 40px !important;
         object-fit: cover !important;
     }
+
+    .curved-background {
+        top: 515px !important;
+    }
 }
 
 @media (max-width: 580px) {
     .curved-background {
-        top: 575px;
+        top: 540px !important;
     }
 }
 
 @media (max-width: 400px) {
-    .curved-background { 
-        top: 560px;
+    .curved-background {
+        top: 545px !important;
     }
 
     .purple-line {
         width: 25px !important;
     }
+
+
 }
 
 @media (max-width: 360px) {
-    .curved-background { 
-        top: 520px;
+    .curved-background {
+        top: 517px !important;
+    }
+
+    .title-content {
+        margin-top: 50px !important;
     }
 }
-

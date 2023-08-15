@@ -14,7 +14,7 @@
         width: 721px;
         gap: 54px;
         margin-right: 48px;
-        z-index: 2;
+        z-index: 4;
 
         img {
             width: 60px;
@@ -48,7 +48,7 @@
         width: 471px;
         margin-right: 42px;
         gap: 34px;
-        z-index: 2;
+        z-index: 5;
 
         h2 {
             text-align: right;
@@ -98,9 +98,10 @@
     top: 1900px !important;
     display: flex;
     justify-content: flex-start;
-    z-index: 0;
+    z-index: 3;
     width: 400px;
     height: 900px;
+    left: 0 !important;
 }
 
 @keyframes bounce {
