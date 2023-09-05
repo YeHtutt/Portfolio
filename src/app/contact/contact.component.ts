@@ -48,7 +48,7 @@ export class ContactComponent {
     formData.append('email', emailInput.value);
     formData.append('message', messageInput.value);
 
-    await fetch('https://ye-htut-aung.developerakademie.net/portfolio/assets/send_email.php', {
+    await fetch('https://ye-htut-aung.de/Portfolio/assets/send_email.php', {
       method: 'POST',
       body: formData
     });
