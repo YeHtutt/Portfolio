@@ -18,6 +18,7 @@ import { StartPageComponent } from './start-page/start-page.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { DaBubbleComponent } from './da-bubble/da-bubble.component';
 
 
 @NgModule({
@@ -35,8 +36,9 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     ImprintComponent,
     StartPageComponent,
-    AppComponent, ContactComponent,
-    
+    AppComponent, 
+    ContactComponent, 
+    DaBubbleComponent,
   ],
   imports: [
     BrowserModule,
