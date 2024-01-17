@@ -2,7 +2,7 @@
 
 ########### CONFIG ###############
 
-$recipient = 'yehaung.nov@gmail.com';
+$recipient = 'email@ye-htut-aung.de';
 $redirect = '';
 
 ########### CONFIG END ###########
