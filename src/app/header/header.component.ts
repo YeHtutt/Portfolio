@@ -8,7 +8,7 @@ import { Component} from '@angular/core';
 export class HeaderComponent {
  
   scrollToSection() {
-    let contactSection = document.getElementById('contact-box');
+    let contactSection = document.getElementById('contact');
     if(contactSection) {
       contactSection.scrollIntoView({behavior: 'smooth'});
     }

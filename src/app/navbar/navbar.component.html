@@ -7,9 +7,10 @@
         </div>
 
         <div class="navbar-menu">
-            <a class="link" href="#AboutMe">About me</a>
-            <a class="link" href="#skills">Skills</a>
-            <a class="link" href="#portfolio">Portfolio</a>
+            <a class="link" [class.highlight-active-section]="activeSection === 'about'" href="#about-me">About me</a>
+            <a class="link" [class.highlight-active-section]="activeSection === 'skills'" href="#skills">Skills</a>
+            <a class="link" [class.highlight-active-section]="activeSection === 'portfolio'" href="#portfolio">Portfolio</a>
+            <a class="link" [class.highlight-active-section]="activeSection === 'contact'" href="#contact">Contact</a>
         </div>
 
         <div class="burger-menu">
@@ -19,10 +20,10 @@
                 <span></span>
             </button>
             <ul *ngIf="menuOpen" class="menu-items">
-                <li><a class="link" href="#AboutMe" (click)="toggleMenu()">About me</a></li>
-                <li><a class="link" href="#skills" (click)="toggleMenu()">Skills</a></li>
-                <li> <a class="link" href="#portfolio" (click)="toggleMenu()">Portfolio</a></li>
-                <li> <a class="link" href="#contact-box" (click)="toggleMenu()">Contact</a></li>
+                <li><a class="link" [class.highlight-active-section]="activeSection === 'about'" href="#about-me" (click)="toggleMenu()">About me</a></li>
+                <li><a class="link" [class.highlight-active-section]="activeSection === 'skills'" href="#skills" (click)="toggleMenu()">Skills</a></li>
+                <li> <a class="link" [class.highlight-active-section]="activeSection === 'portfolio'" href="#portfolio" (click)="toggleMenu()">Portfolio</a></li>
+                <li> <a class="link" [class.highlight-active-section]="activeSection === 'contact'" href="#contact" (click)="toggleMenu()">Contact</a></li>
             </ul>
         </div>
     </div>

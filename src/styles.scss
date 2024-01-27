@@ -14,8 +14,12 @@ body {
     background-color: #141D2F;
     width: 100vw !important;
     max-width: 1440px !important;
+    /*for the browser without Webkit like Firefox*/
+    scrollbar-width: thin; 
+    scrollbar-color: transparent transparent; 
 }
 
+/**for the browser with Webkit like Chrome, Safari*/
 ::-webkit-scrollbar {
     display: none;
     width: 0;

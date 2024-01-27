@@ -56,7 +56,7 @@
   max-width: 100vw !important;
   height: 119px !important;
 
-  background-color:#141D2F;
+  background-color: #141D2F;
   display: flex;
   justify-content: center;
 }
@@ -115,6 +115,11 @@
   &:hover {
     color: #70E61C;
   }
+}
+
+.highlight-active-section {
+  color: #70E61C !important;
+  border-bottom: 3px solid #9747FF !important;
 }
 
 @media (max-width: 1439px) {
